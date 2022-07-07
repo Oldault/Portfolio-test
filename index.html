@@ -73,49 +73,36 @@
 
         </div>
         <div class="contact">
-            <div class="background">
-                <div class="container">
-                  <div class="screen">
-                    <div class="screen-header">
-                      <div class="screen-header-left">
-                        <div class="screen-header-button close"></div>
-                        <div class="screen-header-button maximize"></div>
-                        <div class="screen-header-button minimize"></div>
-                      </div>
-                      <div class="screen-header-right">
-                        <div class="screen-header-ellipsis"></div>
-                        <div class="screen-header-ellipsis"></div>
-                        <div class="screen-header-ellipsis"></div>
-                      </div>
-                    </div>
-                    <div class="screen-body">
-                      <div class="screen-body-item left">
-                        <div class="app-title">
-                          <span>CONTACT</span>
-                          <span>ME</span>
-                        </div>
-                        <div class="app-contact">CONTACT INFO : simon.vernier@proton.me</div>
-                      </div>
-                      <div class="screen-body-item">
-                        <div class="app-form">
-                          <div class="app-form-group">
-                            <input class="app-form-control" placeholder="NAME">
-                          </div>
-                          <div class="app-form-group">
-                            <input class="app-form-control" placeholder="EMAIL">
-                          </div>
-                          <div class="app-form-group message">
-                            <input class="app-form-control" placeholder="MESSAGE">
-                          </div>
-                          <div class="app-form-group buttons">
-                            <button class="app-form-button">CANCEL</button>
-                            <button class="app-form-button">SEND</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div id="container">
+                <h1>&bull; Contact Me &bull;</h1>
+                <div class="underline">
                 </div>
+                <form action="#" method="post" id="contact_form">
+                  <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                  </div>
+                  <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                  </div>
+                  <div class="subject">
+                    <label for="subject"></label>
+                    <select placeholder="Subject line" name="subject" id="subject_input" required>
+                      <option disabled hidden selected>Subject line</option>
+                      <option value="0">I'd like to start a project</option>
+                      <option value="1">I'd like to ask a question</option>
+                      <option value="2">I'd like to make a proposal</option>
+                    </select>
+                  </div>
+                  <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="Send Message" id="form_button" />
+                  </div>
+                </form>
               </div>
         </div>
     </main>

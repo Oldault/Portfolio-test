@@ -20,15 +20,20 @@ p {
 
 i {
     font-size: 90px;
+    transition: all .5s ease;
 }
 
-nav {
+i:hover {
+    margin: 20px;
+}
+
+.nav {
     display:flex;
     padding: 0px 20%;
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    background-color: rgb(95, 113, 97);
+    background-color: #414833;
 }
 
 h1 {
@@ -50,16 +55,25 @@ h1 {
     list-style-type: none;
 }
 
-.about-me-1 {
+#about-me-1 {
     display:flex;
     padding: 100px 20%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(208, 201, 192);
+    background-color: #B6AD90;
+    box-shadow: rgb(0 0 0 / 35%) 0px 50px 36px -46px inset;
+
 }
 
-.about-me-1 h2 {
+#about-me-1 h2 {
     font-size: 32px;
+}
+
+#about-me-1 img {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 img {
@@ -72,7 +86,7 @@ img {
     max-width: 40%;
 }
 
-.info-1 {
+#info-1 {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -80,7 +94,7 @@ img {
 }
 
 .motivations {
-    background-color: rgb(109, 139, 116);
+    background-color: #656D4A;
     padding: 32px 20%;
 }
 
@@ -88,16 +102,16 @@ img {
     font-size: 32px;
 }
 
-.skills {
+#skills {
     padding: 50px 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(239, 234, 216);
+    background-color: #A4AC86;
     text-align: center;
 }
 
-.skills h3 {
+#skills h3 {
     font-size: 32px;
     padding-bottom: 24px;
 }
@@ -106,10 +120,16 @@ img {
     text-align: center;
 }
 
-.my-projects {
-    background-color: rgb(208, 201, 192);
+#my-projects {
+    background-color: #A68A64;
     /* min-height: 400px; */
     padding: 50px 20%;
+}
+
+#my-projects h1 {
+    font-size: 36px;
+    display: flex;
+    align-content: flex-end;
 }
 
 .parent {
@@ -119,29 +139,46 @@ img {
 }
 
 .grid-block {
-    background-color: rgb(109, 139, 116);
+    background-color: #B6AD90;
     display: flex;
     flex-direction: column;
     width: 28%;
     height: auto;
     margin: 16px;
     transition: all .5s ease;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .grid-block:hover {
     width: 32%;
+    background-color: #C2C5AA;
 }
 
 .grid-block .img {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     max-width: 300px;
     width: 100%;
 }
 
-.contact {
+.grid-block img:hover {
+    filter: grayscale(0%);
+}
+
+.grid-block img {
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+
+.grid-text {
+    padding: 16px 8px;
+}
+
+.grid-text h4 {
+    font-size: 20px;
+}
+
+#contact {
     min-height: 400px;
-    background-color: rgb(109, 139, 116);
+    background-color: #656D4A;
     padding: 30px 20%;
     font-family: 'Montserrat', Arial, sans-serif;
     -ms-text-size-adjust: 100%;
@@ -154,7 +191,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: rgb(95, 113, 97);
+    background-color: #414833;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -201,6 +238,11 @@ letter-spacing: 7px;
 text-align: center;
 text-transform: uppercase;
 padding: 16px 0px;
+transition: all .5s ease;
+}
+
+#container h1:hover {
+    letter-spacing: 13px;
 }
 
 .underline {

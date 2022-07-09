@@ -61,7 +61,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     background-color: #B6AD90;
-    box-shadow: rgb(0 0 0 / 35%) 0px 50px 36px -46px inset;
+    box-shadow: rgb(0 0 0 / 35%) 0px 50px 36px -46px inset, rgb(0 0 0 / 35%) 0px -50px 36px -46px inset;
 
 }
 
@@ -109,6 +109,7 @@ img {
     align-items: center;
     background-color: #A4AC86;
     text-align: center;
+    box-shadow: rgb(0 0 0 / 35%) 0px 50px 36px -46px inset, rgb(0 0 0 / 35%) 0px -50px 36px -46px inset;
 }
 
 #skills h3 {
@@ -124,6 +125,7 @@ img {
     background-color: #A68A64;
     /* min-height: 400px; */
     padding: 50px 20%;
+    /* box-shadow: rgb(0 0 0 / 35%) 0px 50px 36px -46px inset; */
 }
 
 #my-projects h1 {
@@ -183,6 +185,7 @@ img {
     font-family: 'Montserrat', Arial, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    box-shadow: rgb(0 0 0 / 35%) 0px 50px 36px -46px inset, rgb(0 0 0 / 35%) 0px -50px 36px -46px inset;
 }
 
 footer {
@@ -192,6 +195,14 @@ footer {
     align-items: center;
     height: 50px;
     background-color: #414833;
+}
+
+footer a {
+    display: flex;
+}
+
+footer a p {
+    margin-left: 16px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -373,6 +384,48 @@ textarea {
 #form_button:hover {
     background: black;
     color: #F2F3EB;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .grid-block {
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    .nav {
+        padding: 0px 10%;
+    }
+
+    #about-me-1 {
+        padding: 90px 10%;
+    }
+
+    .motivations {
+        padding: 50px 10%;
+    }
+
+    #skills {
+        padding: 40px 10%;
+    }
+
+    #my-projects {
+        padding: 60px 10%;
+    }
+
+    .grid-block {
+        margin: 8px;
+    }
+
+    #contact {
+        padding: 30px 10%;
+    }
+
+    footer {
+        padding: 20px 10%;
+    }
 }
 
 @media screen and (max-width: 768px) {

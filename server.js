@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+app.use(Express.static(__dirname+'/images'));
+
 const nodemailer = require("nodemailer");
 
 const PORT = process.env.PORT || 5000;
@@ -21,8 +23,8 @@ app.post('/', (req, res)=>{
         host: 'smtp.ethereal.email',
         port: 587,
         auth: {
-            user: 'karl.wiegand79@ethereal.email',
-            pass: 'gYuwp5G5M6MHyAwd7R'
+            user: 'kevin.brakus4@ethereal.email',
+            pass: 'YaYCPVVwWvWAwYQ4D9'
         }
     });
 

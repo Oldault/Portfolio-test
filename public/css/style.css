@@ -1,12 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
     font-family: 'Titillium Web', sans-serif;
     color: black;
+}
+
+li {
+    list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +31,7 @@ i {
 i:hover {
     margin: 20px;
 }
+
 
 .nav {
     display:flex;
@@ -54,6 +60,52 @@ h1 {
     padding-left: 16px;
     list-style-type: none;
 }
+
+.navbar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: #414833;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: black;
+}
+
+
 
 #about-me-1 {
     display:flex;
@@ -199,6 +251,7 @@ footer {
 
 footer a {
     display: flex;
+    align-items: center;
 }
 
 footer a p {
@@ -429,41 +482,154 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-#container {
-    margin: 20px auto;
-    width: 95%;
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    #about-me-1 {
+        flex-direction: column;
+        padding: 30px 10%;
+    }
+
+    .my-pic {
+        max-width: 80%;
+    }
+
+   #info-1 {
+        padding: 30px 0px;
+        width: 100%;
+    }
+
+    #my-projects {
+        box-shadow: 6px 0 4px -4px #999 inset, -6px 0 4px -4px #999 inset; 
+    }
+
+    h1, h2, h3 {
+        line-height: 96%;
+    }
+
+    .grid-block {
+        width: 90%;
+    }
+
+    .grid-block:hover {
+        width: 100%;
+    }
+
+    .grid-block a {
+        /* display: flex; */
+        width: auto;
+        flex-direction: row;
+    }
+
+    #container h1:hover {
+        letter-spacing: 10px;
+    }
+
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer a p {
+        margin-left: 6px;
+    }
+
+    
 }
+
+@media screen and (max-width: 530px) {
+    .nav {
+        display: none;
+    }
+    
+    .navbar {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #656d4a;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    footer {
+        flex-direction: column;
+        height: 90px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-#container h1 {
-    font-size: 26px;
-}
+    #container h1 {
+        font-size: 26px;
+    }
 
-.underline {
-    width: 68px;
-}
+    .underline {
+        width: 68px;
+    }
 
-#form_button {
-    padding: 15px 25px;
-}
+    #form_button {
+        padding: 15px 25px;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
-#container h1 {
-    font-size: 18px;
-}
 
-.icon {
-    height: 35px;
-    width: 35px;
-}
+    #container h1 {
+        font-size: 18px;
+    }
 
-.underline {
-    width: 53px;
-}
+    #container h1:hover {
+        letter-spacing: 8px;
+    }
 
-input[type='text'], [type='email'], select, textarea {
-    font-size: 0.875em;
-}
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type='text'], [type='email'], select, textarea {
+        font-size: 0.875em;
+    }
 }

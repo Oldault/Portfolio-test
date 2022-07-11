@@ -290,7 +290,7 @@ textarea {
 }
 
 form {
-    padding: 37.5px;
+    padding: 27.5px;
     margin: 50px 0;
 }
 
@@ -437,6 +437,14 @@ textarea {
 #form_button:hover {
     background: black;
     color: #F2F3EB;
+}
+
+.contact-me {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 1400px) {

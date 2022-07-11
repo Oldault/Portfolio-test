@@ -5,7 +5,7 @@ let email = document.getElementById('email_input');
 let subject = document.getElementById('subject_input');
 let message = document.getElementById('message_input');
 
-contactFrom.addEventListener('submit', (e) =>{
+/* contactFrom.addEventListener('submit', (e) =>{
     e.preventDefault();
     
     let formData = {
@@ -33,4 +33,4 @@ contactFrom.addEventListener('submit', (e) =>{
 
     xhr.send(JSON.stringify(formData));
 
-})
+}) */

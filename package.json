@@ -2,6 +2,9 @@
   "name": "portfolio-number-1",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Oldault/Portfolio-test.git"

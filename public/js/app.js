@@ -1,11 +1,11 @@
-const contactFrom = document.querySelector('#contact_form');
+/* const contactFrom = document.querySelector('#contact_form');
 
 let name = document.getElementById('name_input');
 let email = document.getElementById('email_input');
 let subject = document.getElementById('subject_input');
 let message = document.getElementById('message_input');
 
-/* contactFrom.addEventListener('submit', (e) =>{
+contactFrom.addEventListener('submit', (e) =>{
     e.preventDefault();
     
     let formData = {
